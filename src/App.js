@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
+import Axios from 'axios';
 
 function App() {
+  useEffect(() => {
+    Axios.get('init')
+  })
   return (
     <div className="App">
       <header className="App-header">
